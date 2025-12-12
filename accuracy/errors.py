@@ -67,19 +67,6 @@ def log_rel_err(log_approx, log_true):
     if delta < 0 :
         return np.log10(1- np.exp(delta))
 
-def brute_marg(cls_instance,
-               param_min,param_max,nsamples):
-    samples = np.linspace(param_min,
-                          param_max,
-                          nsamples)
-    loglr_samples = np.zeros(len(samples))
-    for i in range(len(samples)):
-        ##Currently hard coded to marginalise coa_phase
-        cls_instance.update(coa_phase=samples[i])
-        loglr_samples[i] = cls_instance.loglr
-    marg_loglr = scipy.special.logsumexp(loglr_samples) - np.log(nsamples) # prior and int volume cancel out
-    return marg_loglr
-
 def create_static(param):
     static = param.copy()
     _ = static.pop('coa_phase')
@@ -88,17 +75,6 @@ def create_static(param):
 def lr_surface(phi,cls_instance):
     cls_instance.update(coa_phase=phi)
     return np.exp(cls_instance.loglr)
-
-def rvs_marg(cls_instance,
-             param_min,param_max,nsamples):
-    rvs = np.random.rand(nsamples)
-    samples = param_min + rvs*(param_max - param_min)
-    loglr_samples = np.zeros(len(samples))
-    for i in range(nsamples):
-        cls_instance.update(coa_phase=samples[i])
-        loglr_samples[i] = cls_instance.loglr
-    marg_loglr = scipy.special.logsumexp(loglr_samples) - np.log(nsamples) # prior and int volume cancel out
-    return marg_loglr
 
 def error_lr():
     parser = argparse.ArgumentParser()
@@ -121,6 +97,8 @@ def error_lr():
     error_approx = np.zeros(args.end-args.start)
 
     shm = np.zeros(args.end-args.start)
+    sh2 = np.zeros(args.end-args.start)
+    sh3 = np.zeros(args.end-args.start)
 
     for idx, i in enumerate(range(args.start,args.end)):
         test_param = {}
@@ -128,11 +106,11 @@ def error_lr():
             test_param[p] = injection_samples[p][i]
         for sp in injection_samples.attrs['static_args']:
             test_param[sp] = injection_samples.attrs[sp]
-        ## Change the modes to 22,33
+        ## Change the modes to what is required
         tp = test_param.copy()
-        tp['mode_array'] = '22'
-        ##Create marginalisation model
-        marg_analytic = MarginalizedPhaseGaussianNoise(variable_params=variable_params,
+        tp['mode_array'] = '22 33'
+        ##Create gaussian model
+        gn = GaussianNoise(variable_params=variable_params,
                                data=generate_data(network=network,**tp),
                                low_frequency_cutoff=low_freq_network[network],
                                psds=psd_network[network],
@@ -144,16 +122,19 @@ def error_lr():
                                psds=psd_network[network],
                                static_params=create_static(tp))
         ##Update models to instantiate them
-        marg_analytic.update(coa_phase = 0)
+        gn.update(coa_phase = 0)
         marg_appx.update(coa_phase = 0)
 
         ## True value
-        log_true[idx] = marg_analytic.loglr
+        quad_int = quad(lr_surface,-np.pi,np.pi,gn)[0]
+        log_true[idx] = np.log(quad_int) - np.log(2*np.pi)
 
         ## approx value
         log_approx[idx] = marg_appx.loglr
         ## snr 
-        shm[idx] = np.abs(marg_appx.shm[2])
+        shm[idx] = np.abs(marg_appx.shm[2] + marg_appx.shm[3])
+        sh2[idx] = np.abs(marg_appx.shm[2])
+        sh3[idx] = np.abs(marg_appx.shm[3])
 
         ## Calculate the relative error in lr and save
         error_approx[idx] = log_rel_err(log_approx[idx],log_true[idx])
@@ -164,8 +145,10 @@ def error_lr():
     loglr.create_dataset('approx',data=log_approx)
     out_file.create_dataset('errors',data=error_approx)
     inner_products = out_file.create_group('shm')
-    inner_products.create_dataset('sh2',data=shm)
-    out_file.attrs['modes'] = '22'
+    inner_products.create_dataset('shm',data=shm)
+    inner_products.create_datset('sh2',data=sh2)
+    inner_products.create_dateset('sh3',data=sh3)
+    out_file.attrs['modes'] = '22 33'
     out_file.attrs['network'] = network
     out_file.close()
 
