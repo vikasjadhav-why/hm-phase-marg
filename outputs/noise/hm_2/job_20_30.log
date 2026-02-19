@@ -1,0 +1,128 @@
+000 (41516224.002.000) 2026-02-13 13:57:31 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (41516224.002.000) 2026-02-13 13:58:22 Job executing on host: <10.5.209.50:9618?addrs=10.5.209.50-9618&alias=CRUSH-OG-10-5-209-50&noUDP&sock=startd_1523_3ad4>
+...
+007 (41516224.002.000) 2026-02-13 13:58:22 Shadow exception!
+	Error from slot1_22@CRUSH-OG-10-5-209-50: Failed to execute '/home/vjadhavy/hmphase/hm-phase-marg/outputs/noise/hm_2/run_model.sh' with arguments 20 30: (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (41516224.002.000) 2026-02-13 13:58:22 Job was held.
+	Error from slot1_22@CRUSH-OG-10-5-209-50: Failed to execute '/home/vjadhavy/hmphase/hm-phase-marg/outputs/noise/hm_2/run_model.sh' with arguments 20 30: (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+009 (41516224.002.000) 2026-02-13 13:59:23 Job was aborted.
+	via condor_rm (by user vjadhavy)
+...
+000 (41516576.002.000) 2026-02-13 13:59:51 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (41516576.002.000) 2026-02-13 14:00:52 Job executing on host: <10.5.213.76:9618?addrs=10.5.213.76-9618&alias=CRUSH-OG-10-5-213-76&noUDP&sock=startd_1524_ea6c>
+...
+006 (41516576.002.000) 2026-02-13 14:00:52 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (41516576.002.000) 2026-02-13 14:00:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 6         6 
+	   Disk (KB)            :        1        1     27410 
+	   Memory (MB)          :        0     2048      2048 
+
+	Job terminated of its own accord at 2026-02-13T19:00:52Z with exit-code 0.
+...
+000 (41518279.002.000) 2026-02-13 14:11:00 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (41518279.002.000) 2026-02-13 14:11:53 Job executing on host: <10.5.207.98:9618?addrs=10.5.207.98-9618&alias=CRUSH-OG-10-5-207-98&noUDP&sock=startd_1542_4320>
+...
+006 (41518279.002.000) 2026-02-13 14:12:02 Image size of job updated: 48936
+	25  -  MemoryUsage of job (MB)
+	25440  -  ResidentSetSize of job (KB)
+...
+006 (41518279.002.000) 2026-02-13 14:12:56 Image size of job updated: 804128
+	25  -  MemoryUsage of job (MB)
+	25440  -  ResidentSetSize of job (KB)
+...
+005 (41518279.002.000) 2026-02-13 14:12:56 Job terminated.
+	(1) Normal termination (return value 2)
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 6         6 
+	   Disk (KB)            :        1        1     27406 
+	   Memory (MB)          :       25     2048      2048 
+
+	Job terminated of its own accord at 2026-02-13T19:12:56Z with exit-code 2.
+...
+000 (41894418.002.000) 2026-02-15 18:31:14 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (41894418.002.000) 2026-02-15 18:31:45 Job executing on host: <10.5.205.28:9618?addrs=10.5.205.28-9618&alias=CRUSH-OG-10-5-205-28&noUDP&sock=startd_1372_a807>
+...
+006 (41894418.002.000) 2026-02-15 18:31:51 Image size of job updated: 56984
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (41894418.002.000) 2026-02-15 18:31:51 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 6         6 
+	   Disk (KB)            :        1        1     27359 
+	   Memory (MB)          :        0     2048      2048 
+
+	Job terminated of its own accord at 2026-02-15T23:31:51Z with exit-code 1.
+...
+000 (41894520.002.000) 2026-02-15 18:38:02 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+022 (41894520.002.000) 2026-02-15 18:38:20 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@OG-NODE-10-5-203-71 <10.5.203.71:9618?addrs=10.5.203.71-9618&alias=OG-NODE-10-5-203-71&noUDP&sock=startd_1150_6200>
+...
+024 (41894520.002.000) 2026-02-15 18:38:20 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@OG-NODE-10-5-203-71, rescheduling job
+...
+001 (41894520.002.000) 2026-02-15 18:38:30 Job executing on host: <10.5.214.39:9618?addrs=10.5.214.39-9618&alias=OG-NODE-10-5-214-39&noUDP&sock=startd_1508_f0e8>
+...
+006 (41894520.002.000) 2026-02-15 18:38:39 Image size of job updated: 149324
+	146  -  MemoryUsage of job (MB)
+	149324  -  ResidentSetSize of job (KB)
+...
+005 (41894520.002.000) 2026-02-15 18:38:40 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 6         6 
+	   Disk (KB)            :        1        1     19022 
+	   Memory (MB)          :      146     2048      2048 
+
+	Job terminated of its own accord at 2026-02-15T23:38:40Z with exit-code 1.
+...

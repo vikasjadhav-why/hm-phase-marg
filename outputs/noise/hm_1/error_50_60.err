@@ -1,0 +1,14 @@
+WARNING:root:No sampling_params section read from config file
+Traceback (most recent call last):
+  File "/home/vjadhavy/hmphase/hm-phase-marg/helper_functions/run_hm_model.py", line 146, in <module>
+    run_model()
+  File "/home/vjadhavy/hmphase/hm-phase-marg/helper_functions/run_hm_model.py", line 143, in run_model
+    store_results(out_file,i,loglr,peaks,shm,inj_path)
+  File "/home/vjadhavy/hmphase/hm-phase-marg/helper_functions/run_hm_model.py", line 102, in store_results
+    shm_grp.create_dataset(key, data=value)
+  File "/home/vjadhavy/miniconda3/envs/hmphasemarg/lib/python3.11/site-packages/h5py/_hl/group.py", line 188, in create_dataset
+    name = self._e(name)
+           ^^^^^^^^^^^^^
+  File "/home/vjadhavy/miniconda3/envs/hmphasemarg/lib/python3.11/site-packages/h5py/_hl/base.py", line 205, in _e
+    raise TypeError(f"A name should be string or bytes, not {type(name)}")
+TypeError: A name should be string or bytes, not <class 'int'>

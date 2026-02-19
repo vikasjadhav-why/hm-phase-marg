@@ -1,0 +1,11 @@
+Universe=Vanilla
+Executable=run_model.sh
+Arguments=$(start) $(end)
+Error = timed_error_$(start)_$(end).err
+Log = timed_job_$(start)_$(end).log
+Output = timed_out_$(start)_$(end).out
+RequestMemory=2GB
+RequestCpus=6
+getenv=True
+
+queue start,end from (0,49)

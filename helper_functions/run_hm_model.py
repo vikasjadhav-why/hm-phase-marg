@@ -54,6 +54,30 @@ def create_parser(
         cp.add_options_to_section('model', [(key, str(value))])
     return cp
 
+def parse_kwargs(kwarg_list):
+    """
+    Convert a list of 'key=value' strings into a dictionary.
+    Values that look like booleans or numbers are cast automatically.
+    e.g. ['dom_mode=True', 'snr_threshold=8.0'] 
+      -> {'dom_mode': True, 'snr_threshold': 8.0}
+    """
+    result = {}
+    for item in kwarg_list:
+        key, value = item.split('=', 1)
+        # Cast to bool, int, float, or leave as string
+        if value.lower() == 'true':
+            value = True
+        elif value.lower() == 'false':
+            value = False
+        else:
+            for cast in (int, float):
+                try:
+                    value = cast(value)
+                    break
+                except ValueError:
+                    pass
+        result[key] = value
+    return result
 def store_results(out_file, idx, loglr, peaks, shm, injection_folder):
     """
     Store results for injection idx into the output HDF file.
@@ -75,8 +99,29 @@ def store_results(out_file, idx, loglr, peaks, shm, injection_folder):
         grp.create_dataset('peaks', data=peaks)
         shm_grp = grp.create_group('shm')
         for key, value in shm.items():
-            shm_grp.create_dataset(key, data=value)
+            shm_grp.create_dataset(str(key), data=value)
 
+def store_all_results(out_file, results, injection_folder):
+    """
+    Store all results into the output HDF file in one write operation.
+    
+    Inputs:
+    "out_file" : path to output HDF file
+    "results" : list of tuples (idx, loglr, peaks, shm)
+    "injection_folder" : path to injection folder (stored as attribute)
+    """
+    with h5py.File(out_file, 'w') as f:
+        # Set root-level attribute
+        f.attrs['injection_folder'] = injection_folder
+        
+        # Write all injections
+        for idx, loglr, peaks, shm in results:
+            grp = f.create_group(f'injection_{idx}')
+            grp.create_dataset('loglr', data=loglr)
+            grp.create_dataset('peaks', data=peaks)
+            shm_grp = grp.create_group('shm')
+            for key, value in shm.items():
+                shm_grp.create_dataset(str(key), data=value)
 
 def run_model():
     parser = argparse.ArgumentParser()
@@ -86,8 +131,8 @@ def run_model():
     parser.add_argument("model_file", help = "path to model config file")
     parser.add_argument("mode_array", help="mode array for signal model")
     parser.add_argument("output_file", help="path for outut file")
-    parser.add_argument("start", help="index of injection to start")
-    parser.add_argument("end", help= "index of injection to end")
+    parser.add_argument("start",type=int, help="index of injection to start")
+    parser.add_argument("end",type=int, help= "index of injection to end")
     parser.add_argument("--kwargs", nargs='*', default=[],
                         metavar="KEY=VALUE",
                         help="additional keyword arguments for the model section")
@@ -102,7 +147,7 @@ def run_model():
     start = args.start
     end = args.end
     out_file = args.output_file
-
+    results = []
     for idx, i in enumerate(range(start,end)):
         cp = create_parser(injection_file=f'{inj_path}/injection_{i}.hdf',
                        variable_params_file=var_par,
@@ -115,12 +160,10 @@ def run_model():
         loglr = model.loglr  ## numpy float
         peaks = model.peaks  ## numpy array
         shm = model.shm      ## dictionary
-        
-        store_results(out_file,i,loglr,peaks,shm,inj_path)
+        results.append((i,loglr,peaks,shm))
+    store_all_results(out_file,results,inj_path)
 
 if __name__=="__main__":
     run_model()
-
-    
 
 
