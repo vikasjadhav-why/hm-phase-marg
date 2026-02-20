@@ -1,11 +1,11 @@
 Universe=Vanilla
 Executable=run_model.sh
 Arguments=$(start) $(end)
-Error = error_$(start)_$(end).err
-Log = job_$(start)_$(end).log
-Output = out_$(start)_$(end).out
+Error = error_files/error_$(start)_$(end).err
+Log = log_files/job_$(start)_$(end).log
+Output = out_files/out_$(start)_$(end).out
 RequestMemory=2GB
 RequestCpus=6
 getenv=True
 
-queue start,end from indices_100.txt
+queue start,end from (300,350)

@@ -1,0 +1,46 @@
+000 (42162725.008.000) 2026-02-19 18:04:25 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (42162725.008.000) 2026-02-19 18:04:41 Job executing on host: <10.5.199.6:9618?addrs=10.5.199.6-9618&alias=OG-NODE-10-5-199-6&noUDP&sock=startd_1497_655d>
+...
+006 (42162725.008.000) 2026-02-19 18:04:51 Image size of job updated: 275444
+	10  -  MemoryUsage of job (MB)
+	9656  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 18:09:52 Image size of job updated: 1093400
+	253  -  MemoryUsage of job (MB)
+	258264  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 18:14:52 Image size of job updated: 1611500
+	327  -  MemoryUsage of job (MB)
+	334624  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 18:24:53 Image size of job updated: 1615596
+	846  -  MemoryUsage of job (MB)
+	865700  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 18:54:55 Image size of job updated: 1615596
+	856  -  MemoryUsage of job (MB)
+	875776  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 20:25:05 Image size of job updated: 1615596
+	916  -  MemoryUsage of job (MB)
+	937348  -  ResidentSetSize of job (KB)
+...
+006 (42162725.008.000) 2026-02-19 22:45:22 Image size of job updated: 1615596
+	916  -  MemoryUsage of job (MB)
+	937676  -  ResidentSetSize of job (KB)
+...
+004 (42162725.008.000) 2026-02-19 23:29:59 Job was evicted.
+	(0) CPU times
+		Usr 0 04:10:32, Sys 0 01:10:47  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        6         6 
+	   Disk (KB)            :     1           1      8112 
+	   Memory (MB)          :   916        2048      2048 
+...
+009 (42162725.008.000) 2026-02-19 23:29:59 Job was aborted.
+	via condor_rm (by user vjadhavy)
+...

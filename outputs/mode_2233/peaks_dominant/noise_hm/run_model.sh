@@ -9,9 +9,9 @@ MODEL_FILE="model.ini"
 MODE_ARRAY="22 33"
 START=$1
 END=$2
-OUTPUT_FILE="timed_output_${START}_${END}.hdf"
+OUTPUT_FILE="results/output_${START}_${END}.hdf"
 
-python /home/vjadhavy/hmphase/hm-phase-marg/helper_functions/time_run.py \
+python /home/vjadhavy/hmphase/hm-phase-marg/helper_functions/run_hm_model.py \
     "$INJECTION_FOLDER" \
     "$VARIABLE_PARAMS_FILE" \
     "$DATA_FILE" \
