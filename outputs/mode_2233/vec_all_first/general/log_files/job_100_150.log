@@ -1,0 +1,45 @@
+000 (42233292.002.000) 2026-02-26 15:31:02 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (42233292.002.000) 2026-02-26 15:31:33 Job executing on host: <10.5.201.171:9618?addrs=10.5.201.171-9618&alias=OG-NODE-10-5-201-171&noUDP&sock=startd_1514_0e79>
+...
+006 (42233292.002.000) 2026-02-26 15:31:42 Image size of job updated: 285100
+	50  -  MemoryUsage of job (MB)
+	51044  -  ResidentSetSize of job (KB)
+...
+006 (42233292.002.000) 2026-02-26 15:36:43 Image size of job updated: 1516220
+	253  -  MemoryUsage of job (MB)
+	258972  -  ResidentSetSize of job (KB)
+...
+006 (42233292.002.000) 2026-02-26 15:41:44 Image size of job updated: 1555132
+	332  -  MemoryUsage of job (MB)
+	339412  -  ResidentSetSize of job (KB)
+...
+006 (42233292.002.000) 2026-02-26 15:46:44 Image size of job updated: 1619744
+	332  -  MemoryUsage of job (MB)
+	339412  -  ResidentSetSize of job (KB)
+...
+006 (42233292.002.000) 2026-02-26 16:01:46 Image size of job updated: 1619744
+	357  -  MemoryUsage of job (MB)
+	365228  -  ResidentSetSize of job (KB)
+...
+006 (42233292.002.000) 2026-02-26 16:06:46 Image size of job updated: 1619744
+	361  -  MemoryUsage of job (MB)
+	369452  -  ResidentSetSize of job (KB)
+...
+005 (42233292.002.000) 2026-02-26 16:07:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:34:22, Sys 0 00:03:12  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:34:22, Sys 0 00:03:12  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.01        6         6 
+	   Disk (KB)            :     1           1     12598 
+	   Memory (MB)          :   361        2048      2048 
+
+	Job terminated of its own accord at 2026-02-26T21:07:06Z with exit-code 0.
+...

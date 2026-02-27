@@ -1,0 +1,45 @@
+000 (42232797.009.000) 2026-02-26 15:29:20 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (42232797.009.000) 2026-02-26 15:29:51 Job executing on host: <10.5.212.34:9618?addrs=10.5.212.34-9618&alias=OG-NODE-10-5-212-34&noUDP&sock=startd_1507_4150>
+...
+006 (42232797.009.000) 2026-02-26 15:29:59 Image size of job updated: 294996
+	41  -  MemoryUsage of job (MB)
+	41580  -  ResidentSetSize of job (KB)
+...
+006 (42232797.009.000) 2026-02-26 15:34:59 Image size of job updated: 1611444
+	363  -  MemoryUsage of job (MB)
+	371140  -  ResidentSetSize of job (KB)
+...
+006 (42232797.009.000) 2026-02-26 15:40:00 Image size of job updated: 1611444
+	365  -  MemoryUsage of job (MB)
+	373188  -  ResidentSetSize of job (KB)
+...
+006 (42232797.009.000) 2026-02-26 15:45:01 Image size of job updated: 1611444
+	398  -  MemoryUsage of job (MB)
+	407496  -  ResidentSetSize of job (KB)
+...
+006 (42232797.009.000) 2026-02-26 15:50:01 Image size of job updated: 1613560
+	398  -  MemoryUsage of job (MB)
+	407496  -  ResidentSetSize of job (KB)
+...
+006 (42232797.009.000) 2026-02-26 16:00:03 Image size of job updated: 1617624
+	398  -  MemoryUsage of job (MB)
+	407496  -  ResidentSetSize of job (KB)
+...
+005 (42232797.009.000) 2026-02-26 16:03:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:32:31, Sys 0 00:02:59  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:32:31, Sys 0 00:02:59  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.02        6         6 
+	   Disk (KB)            :     1           1     16776 
+	   Memory (MB)          :   398        2048      2048 
+
+	Job terminated of its own accord at 2026-02-26T21:03:58Z with exit-code 0.
+...

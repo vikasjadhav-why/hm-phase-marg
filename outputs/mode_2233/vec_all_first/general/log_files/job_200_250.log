@@ -1,0 +1,29 @@
+000 (42233292.004.000) 2026-02-26 15:31:02 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_873_6244>
+...
+001 (42233292.004.000) 2026-02-26 15:31:33 Job executing on host: <10.5.203.111:9618?addrs=10.5.203.111-9618&alias=OG-NODE-10-5-203-111&noUDP&sock=startd_1508_f0e8>
+...
+006 (42233292.004.000) 2026-02-26 15:31:42 Image size of job updated: 71524
+	42  -  MemoryUsage of job (MB)
+	42352  -  ResidentSetSize of job (KB)
+...
+006 (42233292.004.000) 2026-02-26 15:36:43 Image size of job updated: 1611416
+	421  -  MemoryUsage of job (MB)
+	430924  -  ResidentSetSize of job (KB)
+...
+005 (42233292.004.000) 2026-02-26 16:05:16 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:32:29, Sys 0 00:03:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:32:29, Sys 0 00:03:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.01        6         6 
+	   Disk (KB)            :     1           1     15261 
+	   Memory (MB)          :   421        2048      2048 
+
+	Job terminated of its own accord at 2026-02-26T21:05:16Z with exit-code 0.
+...
