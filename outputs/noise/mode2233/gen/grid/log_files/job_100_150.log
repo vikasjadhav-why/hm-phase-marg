@@ -1,0 +1,45 @@
+000 (45924169.002.000) 2026-05-07 22:57:19 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45924169.002.000) 2026-05-07 22:57:35 Job executing on host: <10.5.241.81:9618?addrs=10.5.241.81-9618&alias=CRUSH-OG-10-5-241-81&noUDP&sock=startd_2929688_dd90>
+...
+006 (45924169.002.000) 2026-05-07 22:57:43 Image size of job updated: 61424
+	32  -  MemoryUsage of job (MB)
+	31988  -  ResidentSetSize of job (KB)
+...
+006 (45924169.002.000) 2026-05-07 23:02:43 Image size of job updated: 1548468
+	485  -  MemoryUsage of job (MB)
+	496092  -  ResidentSetSize of job (KB)
+...
+006 (45924169.002.000) 2026-05-07 23:07:43 Image size of job updated: 1554100
+	489  -  MemoryUsage of job (MB)
+	500188  -  ResidentSetSize of job (KB)
+...
+006 (45924169.002.000) 2026-05-07 23:12:44 Image size of job updated: 1627748
+	489  -  MemoryUsage of job (MB)
+	500188  -  ResidentSetSize of job (KB)
+...
+006 (45924169.002.000) 2026-05-07 23:32:46 Image size of job updated: 1627748
+	853  -  MemoryUsage of job (MB)
+	872784  -  ResidentSetSize of job (KB)
+...
+006 (45924169.002.000) 2026-05-08 00:52:53 Image size of job updated: 1627748
+	916  -  MemoryUsage of job (MB)
+	937188  -  ResidentSetSize of job (KB)
+...
+005 (45924169.002.000) 2026-05-08 01:06:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:56:42, Sys 0 00:13:37  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:56:42, Sys 0 00:13:37  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        6         6 
+	   Disk (KB)            :     1           1     27412 
+	   Memory (MB)          :   916        2048      2048 
+
+	Job terminated of its own accord at 2026-05-08T05:06:08Z with exit-code 0.
+...

@@ -1,0 +1,45 @@
+000 (45926355.006.000) 2026-05-07 23:32:01 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45926355.006.000) 2026-05-07 23:32:24 Job executing on host: <10.5.185.236:9618?addrs=10.5.185.236-9618&alias=OG-NODE-10-5-185-236&noUDP&sock=startd_1247_eab0>
+...
+006 (45926355.006.000) 2026-05-07 23:32:32 Image size of job updated: 276152
+	35  -  MemoryUsage of job (MB)
+	35536  -  ResidentSetSize of job (KB)
+...
+006 (45926355.006.000) 2026-05-07 23:37:32 Image size of job updated: 1552328
+	372  -  MemoryUsage of job (MB)
+	380312  -  ResidentSetSize of job (KB)
+...
+006 (45926355.006.000) 2026-05-07 23:42:34 Image size of job updated: 1560008
+	374  -  MemoryUsage of job (MB)
+	382560  -  ResidentSetSize of job (KB)
+...
+006 (45926355.006.000) 2026-05-07 23:57:35 Image size of job updated: 1621452
+	409  -  MemoryUsage of job (MB)
+	418216  -  ResidentSetSize of job (KB)
+...
+006 (45926355.006.000) 2026-05-08 00:02:36 Image size of job updated: 1621452
+	411  -  MemoryUsage of job (MB)
+	420328  -  ResidentSetSize of job (KB)
+...
+006 (45926355.006.000) 2026-05-08 00:07:36 Image size of job updated: 1621452
+	415  -  MemoryUsage of job (MB)
+	424816  -  ResidentSetSize of job (KB)
+...
+005 (45926355.006.000) 2026-05-08 00:12:10 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:37:27, Sys 0 00:03:20  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:37:27, Sys 0 00:03:20  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.05        6         6 
+	   Disk (KB)            :     1           1     14341 
+	   Memory (MB)          :   415        2048      2048 
+
+	Job terminated of its own accord at 2026-05-08T04:12:10Z with exit-code 0.
+...

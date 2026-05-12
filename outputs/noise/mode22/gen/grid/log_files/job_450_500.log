@@ -1,0 +1,53 @@
+000 (45739882.009.000) 2026-04-30 16:12:17 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45739882.009.000) 2026-04-30 16:13:35 Job executing on host: <10.5.216.140:9618?addrs=10.5.216.140-9618&alias=CRUSH-OG-10-5-216-140&noUDP&sock=startd_1542_4320>
+...
+006 (45739882.009.000) 2026-04-30 16:13:43 Image size of job updated: 64520
+	36  -  MemoryUsage of job (MB)
+	36008  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:18:43 Image size of job updated: 1607856
+	256  -  MemoryUsage of job (MB)
+	262052  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:23:44 Image size of job updated: 1607856
+	310  -  MemoryUsage of job (MB)
+	316720  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:28:45 Image size of job updated: 1607856
+	344  -  MemoryUsage of job (MB)
+	351396  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:43:46 Image size of job updated: 1607856
+	359  -  MemoryUsage of job (MB)
+	367432  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:53:46 Image size of job updated: 1611952
+	387  -  MemoryUsage of job (MB)
+	395472  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 16:58:47 Image size of job updated: 1611952
+	393  -  MemoryUsage of job (MB)
+	402204  -  ResidentSetSize of job (KB)
+...
+006 (45739882.009.000) 2026-04-30 17:03:48 Image size of job updated: 1640304
+	393  -  MemoryUsage of job (MB)
+	402204  -  ResidentSetSize of job (KB)
+...
+005 (45739882.009.000) 2026-04-30 17:09:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:51:33, Sys 0 00:05:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:51:33, Sys 0 00:05:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.01        6         6 
+	   Disk (KB)            :     1           1     28369 
+	   Memory (MB)          :   393        2048      2048 
+
+	Job terminated of its own accord at 2026-04-30T21:09:29Z with exit-code 0.
+...

@@ -1,0 +1,45 @@
+000 (45924178.002.000) 2026-05-07 23:02:12 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45924178.002.000) 2026-05-07 23:02:32 Job executing on host: <10.5.202.5:9618?addrs=10.5.202.5-9618&alias=OG-NODE-10-5-202-5&noUDP&sock=startd_1497_655d>
+...
+006 (45924178.002.000) 2026-05-07 23:02:41 Image size of job updated: 379772
+	59  -  MemoryUsage of job (MB)
+	60176  -  ResidentSetSize of job (KB)
+...
+006 (45924178.002.000) 2026-05-07 23:07:42 Image size of job updated: 1578868
+	234  -  MemoryUsage of job (MB)
+	239284  -  ResidentSetSize of job (KB)
+...
+006 (45924178.002.000) 2026-05-07 23:12:42 Image size of job updated: 1582968
+	380  -  MemoryUsage of job (MB)
+	388700  -  ResidentSetSize of job (KB)
+...
+006 (45924178.002.000) 2026-05-07 23:17:42 Image size of job updated: 1646456
+	383  -  MemoryUsage of job (MB)
+	391604  -  ResidentSetSize of job (KB)
+...
+006 (45924178.002.000) 2026-05-07 23:32:44 Image size of job updated: 1646456
+	386  -  MemoryUsage of job (MB)
+	394460  -  ResidentSetSize of job (KB)
+...
+006 (45924178.002.000) 2026-05-07 23:37:00 Image size of job updated: 1650684
+	386  -  MemoryUsage of job (MB)
+	394460  -  ResidentSetSize of job (KB)
+...
+005 (45924178.002.000) 2026-05-07 23:37:00 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:32:41, Sys 0 00:03:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:32:41, Sys 0 00:03:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.02        6         6 
+	   Disk (KB)            :     1           1     17816 
+	   Memory (MB)          :   386        2048      2048 
+
+	Job terminated of its own accord at 2026-05-08T03:37:00Z with exit-code 0.
+...

@@ -1,0 +1,45 @@
+000 (45926355.007.000) 2026-05-07 23:32:01 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45926355.007.000) 2026-05-07 23:32:24 Job executing on host: <10.5.208.125:9618?addrs=10.5.208.125-9618&alias=OG-NODE-10-5-208-125&noUDP&sock=startd_1249_49e0>
+...
+006 (45926355.007.000) 2026-05-07 23:32:32 Image size of job updated: 350160
+	44  -  MemoryUsage of job (MB)
+	44604  -  ResidentSetSize of job (KB)
+...
+006 (45926355.007.000) 2026-05-07 23:37:32 Image size of job updated: 1546116
+	318  -  MemoryUsage of job (MB)
+	325284  -  ResidentSetSize of job (KB)
+...
+006 (45926355.007.000) 2026-05-07 23:42:33 Image size of job updated: 1615240
+	336  -  MemoryUsage of job (MB)
+	343568  -  ResidentSetSize of job (KB)
+...
+006 (45926355.007.000) 2026-05-07 23:47:34 Image size of job updated: 1615240
+	340  -  MemoryUsage of job (MB)
+	347164  -  ResidentSetSize of job (KB)
+...
+006 (45926355.007.000) 2026-05-07 23:52:34 Image size of job updated: 1615240
+	367  -  MemoryUsage of job (MB)
+	375584  -  ResidentSetSize of job (KB)
+...
+006 (45926355.007.000) 2026-05-08 00:07:35 Image size of job updated: 1615240
+	372  -  MemoryUsage of job (MB)
+	380364  -  ResidentSetSize of job (KB)
+...
+005 (45926355.007.000) 2026-05-08 00:13:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:39:19, Sys 0 00:03:27  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:39:19, Sys 0 00:03:27  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.04        6         6 
+	   Disk (KB)            :     1           1     15406 
+	   Memory (MB)          :   372        2048      2048 
+
+	Job terminated of its own accord at 2026-05-08T04:13:52Z with exit-code 0.
+...

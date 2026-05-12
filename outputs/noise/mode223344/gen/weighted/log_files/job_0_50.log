@@ -1,0 +1,45 @@
+000 (45926345.000.000) 2026-05-07 23:26:26 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45926345.000.000) 2026-05-07 23:26:46 Job executing on host: <10.5.207.58:9618?addrs=10.5.207.58-9618&alias=CRUSH-OG-10-5-207-58&noUDP&sock=startd_1502445_e165>
+...
+006 (45926345.000.000) 2026-05-07 23:26:55 Image size of job updated: 345264
+	56  -  MemoryUsage of job (MB)
+	56880  -  ResidentSetSize of job (KB)
+...
+006 (45926345.000.000) 2026-05-07 23:31:55 Image size of job updated: 1575132
+	304  -  MemoryUsage of job (MB)
+	310792  -  ResidentSetSize of job (KB)
+...
+006 (45926345.000.000) 2026-05-07 23:36:55 Image size of job updated: 1575132
+	337  -  MemoryUsage of job (MB)
+	344824  -  ResidentSetSize of job (KB)
+...
+006 (45926345.000.000) 2026-05-07 23:46:57 Image size of job updated: 1575132
+	354  -  MemoryUsage of job (MB)
+	362084  -  ResidentSetSize of job (KB)
+...
+006 (45926345.000.000) 2026-05-07 23:51:57 Image size of job updated: 1619424
+	694  -  MemoryUsage of job (MB)
+	710492  -  ResidentSetSize of job (KB)
+...
+006 (45926345.000.000) 2026-05-08 00:17:00 Image size of job updated: 1662012
+	694  -  MemoryUsage of job (MB)
+	710492  -  ResidentSetSize of job (KB)
+...
+005 (45926345.000.000) 2026-05-08 00:20:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:51:24, Sys 0 00:04:13  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:51:24, Sys 0 00:04:13  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.06        6         6 
+	   Disk (KB)            :     1           1     28040 
+	   Memory (MB)          :   694        2048      2048 
+
+	Job terminated of its own accord at 2026-05-08T04:20:28Z with exit-code 0.
+...

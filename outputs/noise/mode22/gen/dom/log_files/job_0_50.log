@@ -1,0 +1,49 @@
+000 (45739896.000.000) 2026-04-30 16:15:18 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1361_1c7c>
+...
+001 (45739896.000.000) 2026-04-30 16:16:31 Job executing on host: <10.5.199.242:9618?addrs=10.5.199.242-9618&alias=OG-NODE-10-5-199-242&noUDP&sock=startd_1240_1d86>
+...
+006 (45739896.000.000) 2026-04-30 16:16:40 Image size of job updated: 330640
+	36  -  MemoryUsage of job (MB)
+	36200  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:21:41 Image size of job updated: 1609132
+	267  -  MemoryUsage of job (MB)
+	272388  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:26:41 Image size of job updated: 1609132
+	417  -  MemoryUsage of job (MB)
+	426872  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:31:41 Image size of job updated: 1631596
+	417  -  MemoryUsage of job (MB)
+	426872  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:36:42 Image size of job updated: 1653392
+	469  -  MemoryUsage of job (MB)
+	480204  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:41:43 Image size of job updated: 1653392
+	474  -  MemoryUsage of job (MB)
+	485092  -  ResidentSetSize of job (KB)
+...
+006 (45739896.000.000) 2026-04-30 16:56:45 Image size of job updated: 1653392
+	492  -  MemoryUsage of job (MB)
+	503736  -  ResidentSetSize of job (KB)
+...
+005 (45739896.000.000) 2026-04-30 17:03:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:43:35, Sys 0 00:04:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:43:35, Sys 0 00:04:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.01        6         6 
+	   Disk (KB)            :     1           1     14195 
+	   Memory (MB)          :   492        2048      2048 
+
+	Job terminated of its own accord at 2026-04-30T21:03:07Z with exit-code 0.
+...
